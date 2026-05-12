@@ -11,7 +11,7 @@ This subfolder holds WGU's contract-defense artifacts for the SkillProof engagem
 
 ## Why this folder exists
 
-The storyboard at `brady-wgu/JFT_SDP` is the visual North Star JFT builds against. The storyboard intentionally contains only the UI elements the production SkillProof should ship with. It carries no inline contract citations, no annotations, no commentary, no implementation guidance. Anything visible in the storyboard is a build instruction.
+The storyboard at `brady-wgu/SkillProof` is the visual North Star JFT builds against. The storyboard intentionally contains only the UI elements the production SkillProof should ship with. It carries no inline contract citations, no annotations, no commentary, no implementation guidance. Anything visible in the storyboard is a build instruction.
 
 Contract traceability lives here instead. When a question arises about whether a feature is in scope, the trackers in this folder are the source of truth — not anything in the storyboard itself.
 
@@ -19,7 +19,7 @@ Contract traceability lives here instead. When a question arises about whether a
 
 - **Build rule for JFT:** Content in this folder is not part of the SkillProof product. Do not implement anything described here unless it is also reflected in the storyboard (which is the build spec).
 - **Build rule for the storyboard:** Storyboard HTML must contain only production-bound UI. Contract IDs, traceability notes, and audit commentary go here, never in the storyboard.
-- **Visibility rule:** Folders prefixed with a leading underscore are excluded from the Jekyll/GitHub Pages build by default, so the live storyboard at `https://brady-wgu.github.io/JFT_SDP/` does not surface these files.
+- **Visibility rule:** Folders prefixed with a leading underscore are excluded from the Jekyll/GitHub Pages build by default, so the live storyboard at `https://brady-wgu.github.io/SkillProof/` does not surface these files.
 
 ## File status
 
