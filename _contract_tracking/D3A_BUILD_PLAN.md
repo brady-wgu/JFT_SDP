@@ -43,9 +43,9 @@ Linked from `super-02 Portal home` as a quick-link card alongside the existing f
 
 ### Design constraints
 
-- SDP Design System v1.2 (Paragon + WGU FY26 brand tokens).
+- SkillProof Design System v1.2 (Paragon + WGU FY26 brand tokens).
 - The code-syntax palette extension is permitted for the JSON/GraphQL code blocks (already in use on `tenant-08` and the data console screens). Do not expand the extension to anything outside code blocks.
-- The "external dashboard" pattern from `super-10 External Tooling` is the precedent for any control surface that lives outside the SDP (e.g., the actual Kafka admin console, the Swagger UI). Do not duplicate those controls inside the SDP.
+- The "external dashboard" pattern from `super-10 External Tooling` is the precedent for any control surface that lives outside the SkillProof (e.g., the actual Kafka admin console, the Swagger UI). Do not duplicate those controls inside the SkillProof.
 - Cross-tenant scope must be visually clear: no per-tenant scoping breadcrumb, consistent with the rest of Super Admin.
 
 ### Tracker updates
@@ -85,7 +85,7 @@ Recommendation: **Option A** for full-fidelity coverage and reusability across p
 
 ### Design constraints
 
-- Same SDP Design System v1.2 chrome as the other admin portals.
+- Same SkillProof Design System v1.2 chrome as the other admin portals.
 - Video tile thumbnails are illustrative — no need for real video assets in the storyboard. Use placeholder coloured rectangles with a play-button icon overlay.
 - Search bar is non-functional in the storyboard (it's design spec, not production code).
 - "Contact JFT Support" CTA on the support portal should mirror the Jira ticket workflow on `tenant-16` so the visual pattern is consistent.

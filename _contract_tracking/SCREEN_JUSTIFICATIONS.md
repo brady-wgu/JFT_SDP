@@ -7,7 +7,7 @@
 **Version:** v1.0 (initial baseline)
 **Date:** 12 May 2026
 **Author:** WGU Program Development
-**Source:** brady-wgu/JFT_SDP at v4.42; signed JFT MSA / SOW (executed 2026)
+**Source:** brady-wgu/JFT_SDP at v4.43; signed JFT MSA / SOW (executed 2026)
 
 ## How to read this file
 
@@ -31,7 +31,7 @@ Classification policy:
 
 ## Student — Sally · 34 screens · `student/index.html`
 
-> **The student portal is frozen as of v4.42.** WGU authorizes student-side changes individually. The classifications below document grounding for the existing screens; they do not authorize edits.
+> **The student portal is frozen as of v4.43.** WGU authorizes student-side changes individually. The classifications below document grounding for the existing screens; they do not authorize edits.
 
 | ID | Title | Scenario | Primary Grounding | Supporting Grounding | Classification | Action | Notes |
 |:---|:---|:---|:---|:---|:---|:---|:---|
@@ -96,8 +96,8 @@ Student totals: 30 Contract-required · 4 Essential scaffolding · 0 Discretiona
 | `tenant-14` | Service degradation detected | SC-ADD-06 | SOW-9.13 · A-6.5 fallback mechanisms | — | Contract-required | Keep | |
 | `tenant-15` | Service degradation: LLM provider unreachable | SC-ADD-06 | A-6.5 fallback engagement | A-6.6 token tracking (during fallback) | Contract-required | Keep | |
 | `tenant-16` | Log a P1 incident in Jira | SC-ADD-06 | SOW-9.1 Jira ticketing · SOW-9.4 channel | A-9.5 SLAs | Contract-required | Keep | |
-| `tenant-17` | JFT-SDP-2138 created | SC-ADD-06 | SOW-9.1 ticket confirmation · SOW-9.4 | — | Contract-required | Keep | |
-| `tenant-18` | JFT-SDP-2138: Primary LLM unreachable (CSM chat thread) | SC-ADD-06 | SOW-9.7 CSM · SOW-9.5 P1 SLA <2hr · SOW-9.10 response | — | Contract-required | Keep | CSM Jordan as WGU-facing POC. |
+| `tenant-17` | JFT-SkillProof-2138 created | SC-ADD-06 | SOW-9.1 ticket confirmation · SOW-9.4 | — | Contract-required | Keep | |
+| `tenant-18` | JFT-SkillProof-2138: Primary LLM unreachable (CSM chat thread) | SC-ADD-06 | SOW-9.7 CSM · SOW-9.5 P1 SLA <2hr · SOW-9.10 response | — | Contract-required | Keep | CSM Jordan as WGU-facing POC. |
 | `tenant-19` | Service restored at 11:08:14 UTC | SC-ADD-06 | A-9.2 99.95% uptime · A-6.5 fallback success | — | Contract-required | Keep | |
 | `tenant-20` | 99.95% Uptime SLA (dashboard) | SC-ADD-06 | A-9.2 99.95% uptime · SOW-9.5 SLA verification | A-7.13 visualizations | Contract-required | Keep | Uptime gauge + downtime budget remaining. |
 | `tenant-21` | Branding & Customization | SC-ADD-02 (settings) | A-7.9 customizable interface per institution · A-7.6 multi-language · A-7.7 PWA | A-7.3 | Contract-required | Keep | |
@@ -141,7 +141,7 @@ Instructor totals: 8 Contract-required · 0 Essential scaffolding · 0 Discretio
 | `super-08` | Cross-tenant audit log | SC-ADD-04 | A-10.4 audit logging (cross-tenant) | A-8.6 multi-tenancy | Contract-required | Keep | Surfaces events from Alice, Charlie, JFT CSM, system. |
 | `super-09` | User Management (4-tier role taxonomy) | SC-ADD-04 ext | A-10.8 RBAC · SOW-2.5 (instructors/admins management) | A-10.4 audit on elevation | Contract-required | Keep | v4.27 expanded to Student/Instructor/Tenant Admin/Global Admin; v4.29 LTI baseline annotations. |
 | `super-10` | External Tooling & Integrations | SC-ADD-04 ext | SOW-5 Technology Stack · A-6.1 multi-LLM (provider dashboards) | — | Contract-required | Keep | v4.28 hub to AWS / OpenRouter / etc. Avoids duplicating provider UIs. |
-| `super-11` | Data & Integrations Hub (data export · webhooks · GraphQL · streaming) | SC-ADD-04 ext (proposed: SC-ADD-08 Data & Integrations) | A-6.28 GraphQL API · A-8.8 real-time/batch export · A-8.12 webhooks · A-8.13 GraphQL queries · A-8.14 data streaming | A-6.22 REST API · A-8.11 API docs (link card) | Contract-required | Keep | v4.42 closed the remaining 5 D3a true-gap items on this single new surface. Cross-tenant scope; consolidates data-export functions moved from tenant_admin in v4.22. |
+| `super-11` | Data & Integrations Hub (data export · webhooks · GraphQL · streaming) | SC-ADD-04 ext (proposed: SC-ADD-08 Data & Integrations) | A-6.28 GraphQL API · A-8.8 real-time/batch export · A-8.12 webhooks · A-8.13 GraphQL queries · A-8.14 data streaming | A-6.22 REST API · A-8.11 API docs (link card) | Contract-required | Keep | v4.43 closed the remaining 5 D3a true-gap items on this single new surface. Cross-tenant scope; consolidates data-export functions moved from tenant_admin in v4.22. |
 
 Super Admin totals: 11 Contract-required · 0 Essential scaffolding · 0 Discretionary.
 
@@ -161,7 +161,7 @@ LRPS totals: 0 Contract-required · 1 Essential scaffolding · 0 Discretionary.
 
 | ID | Title | Scenario | Primary Grounding | Supporting Grounding | Classification | Action | Notes |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| `help-01` | Help & Resources (search, self-service cards, updates feed, role-filtered video gallery, Contact JFT Support FAB) | SC-ADD-07 (proposed for post-MVP support release) | A-9.14 Self-service support portal · A-9.15 Video training resources | A-9.1 24/7 monitoring (Contact JFT Support entry point) · A-9.4/§9.4 support channels · A-9.11 documentation/training materials | Contract-required | Keep | v4.42 introduced the shared surface. Persona: all admin roles (Tenant Admin / Instructor / Super Admin) plus LRPS admin. The student portal is frozen at v1.2 MVP and cannot link to Help & Resources yet; this is a post-MVP shared surface only. Closes the two true gaps from the v4.36 D3a re-audit for the Support & Training theme. |
+| `help-01` | Help & Resources (search, self-service cards, updates feed, role-filtered video gallery, Contact JFT Support FAB) | SC-ADD-07 (proposed for post-MVP support release) | A-9.14 Self-service support portal · A-9.15 Video training resources | A-9.1 24/7 monitoring (Contact JFT Support entry point) · A-9.4/§9.4 support channels · A-9.11 documentation/training materials | Contract-required | Keep | v4.43 introduced the shared surface. Persona: all admin roles (Tenant Admin / Instructor / Super Admin) plus LRPS admin. The student portal is frozen at v1.2 MVP and cannot link to Help & Resources yet; this is a post-MVP shared surface only. Closes the two true gaps from the v4.36 D3a re-audit for the Support & Training theme. |
 
 Help & Resources totals: 1 Contract-required · 0 Essential scaffolding · 0 Discretionary.
 
