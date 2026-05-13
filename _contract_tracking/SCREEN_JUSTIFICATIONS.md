@@ -83,10 +83,7 @@ Student totals: 30 Contract-required · 4 Essential scaffolding · 0 Discretiona
 | `tenant-01` | Welcome to the Tenant Admin Portal (SSO landing) | SC-ADD-02 | SOW-2.5 Admin Portal · A-8.2 SAML SSO · A-10.8 RBAC | — | Contract-required | Keep | LRPS deep-link entry + Instructor LTI baseline + Tenant Admin elevation lookup (v4.29 framing). |
 | `tenant-02` | Welcome back, Alice (portal home) | SC-ADD-02 | SOW-2.5 · A-8.6 multi-tenancy (read-only view of other tenants) · A-10.8 RBAC | A-9.1 monitoring summary | Contract-required | Keep | Multi-tenant scoping callout. |
 | `tenant-03` | Create a new Subject | SC-ADD-02 | SOW-2.5 (Course-as-a-Service authoring) | A-10.4 audit on creation | Contract-required | Keep | |
-| `tenant-04` | Topics & Learning Objectives | SC-ADD-02 | SOW-2.5 · A-10.4 audit on edit | A-7.13 data table viz | Contract-required | Keep | Per-LO threshold + weight integrated in table. |
-| `tenant-05` | Add a Learning Objective | SC-ADD-02 | SOW-2.5 · A-10.4 audit | A-7.3 accessibility | Contract-required | Keep | Per-LO threshold + weight form. |
-| `tenant-06` | Edit Learning Objective 1.3 | SC-ADD-02 | SOW-2.5 · A-10.4 audit | A-7.3 | Contract-required | Keep | |
-| `tenant-07` | Remove Learning Objective 4.3? | SC-ADD-02 | SOW-2.5 · A-10.4 audit | A-7.3 | Contract-required | Keep | Confirmation flow with audit trail context. |
+| `tenant-04` | Topics & Learning Objectives | SC-ADD-02 | SOW-2.5 · A-10.4 audit on edit | A-7.13 data table viz · A-7.3 accessibility | Contract-required | Keep | v4.47: refactored to inline per-topic expanders with editable text + threshold + weight inputs and inline add / remove. Add / Edit / Remove LO operations are now in-place; the prior screens 05 (Add LO), 06 (Edit LO), and 07 (Remove LO) were retired in the same release. |
 | `tenant-08` | Configure the AI Coaching Prompt | SC-ADD-02 | A-6.7 centralized prompt guardrails | A-7.3 | Contract-required | Keep | 4 short text-box guardrails; hallucination warning. |
 | `tenant-09` | Choose the Preferred Model | SC-ADD-02 | A-6.1 multi-LLM · A-6.2 routing by use case | — | Contract-required | Keep | Per-Subject model picker. |
 | `tenant-10` | Scoring style & coaching defaults | SC-ADD-02 | SOW-2.5 (coaching configuration) | A-6.7 | Contract-required | Keep | Socratic / Direct / Adaptive. |
